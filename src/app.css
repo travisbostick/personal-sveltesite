@@ -1,0 +1,36 @@
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: 'iCiel Medium';
+		src: url('./fonts/iCiel\ Medium.ttf');
+	}
+	@font-face {
+		font-family: 'HKGrotesk';
+		src: url('./fonts/HKGrotesk-Regular.otf');
+	}
+	p {
+		font-family: 'HKGrotesk';
+		@apply xl:text-3xl lg:text-2xl md:text-xl text-lg mb-7;
+	}
+	.link:hover {
+		transition: 0.2s;
+		color: #9b9b9b;
+	}
+	.name {
+		@apply xl:text-3xl lg:text-3xl md:text-2xl sm:text-2xl xs:text-xl xxs:text-lg text-base;
+	}
+	.role {
+		@apply xl:text-9xl lg:text-9xl md:text-8xl sm:text-8xl xs:text-7xl xxs:text-6xl text-5xl;
+	}
+	.projects {
+		@apply grid xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-y-0 gap-x-5 px-9;
+		margin-top: 1%;
+		text-align: center;
+		margin-bottom: 5rem;
+		padding-bottom: 6rem;
+	}
+}
